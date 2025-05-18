@@ -1,2 +1,2 @@
 # Main python installation
-python3
+pandas
