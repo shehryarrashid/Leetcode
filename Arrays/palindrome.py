@@ -17,13 +17,13 @@ def isPalindrome(s: str) -> bool:
     Returns:
     bool: True if the string is a palindrome, False otherwise.
     """
-    if isinstance(s,str):
-        j = len(s) - 1
-        for i in range(len(s)):
-            if s[i] != s[j]:
-                return False
-            j -= 1
-    else:
-        return Exception("Invalid input, your function input must be a string")
     
-print(isPalindrome("Hello"))
+    j = len(s) - 1
+    for i in range(len(s)):
+        if s[i] != s[j]:
+            return False
+        j -= 1
+    
+    return True
+    
+print(isPalindrome("racecar"))
